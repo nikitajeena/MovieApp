@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+:root{
+    --primary-color: rgb(96, 89, 133);
+}
+
+body{
+background-color: var(--primary-color);
+font-family: sans-serif;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.section{
+    margin: 3rem 0rem 3rem 0rem;
+    background-color:  rgb(121, 102, 131);
+    border-radius: 2rem;
+    padding: 1rem 0px 0.5rem 3rem;
+    text-align: center;  
+    display: flex;  
+    justify-content: space-between;            
+    width: 100%;
+
+
+}
+
+.section2{
+    background-color: rgb(104, 75, 104);
+    width: 80%;
+}
+
+.overview{
+    color: white;
+    text-align: center
+
+}
+.overview h3{
+    padding-top: 3rem;
+}
+.overview p{
+    padding-top: 2rem;
+}
+.section2{
+    padding-top: 6rem;
+}
+.overview p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+.movieDetails{
+    color: white;
+    text-align: center
+    
+    
+
+}
+iframe{
+    height: 200px;
+    /* width: 100%; */
+    margin-bottom: 5rem;
+}
