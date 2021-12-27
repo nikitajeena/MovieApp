@@ -40,6 +40,7 @@ function showmovies(data) {
 
 function movieDetails(event) {
   console.log(event.target.id);
+  //hi
 
   console.log(event.target.dataset);
   const data = event.target.dataset;
