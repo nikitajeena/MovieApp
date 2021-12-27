@@ -53,3 +53,5 @@ function movieDetails(event) {
 // <h1> ${ title } </h1>
 // <button class="movieDetails" onclick="movieDetails(event)" data-id=${id}> SHOW DETAILS </button>`
 // let hold = document.createTextNode(content);
+
+// hello
