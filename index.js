@@ -7,6 +7,10 @@ const API_URL = BASE_URL + api_param;
 const IMG_URL = " https://image.tmdb.org/t/p/w500";
 movies(API_URL);
 
+const SEARCH_URL = BASE_URL + '/search/movie' + api_param;
+const main = document.getElementById("main");
+const search = document.getElementById("search");
+const form = document.getElementById("form")
 
 function movies(url) {
   fetch(url)
@@ -19,7 +23,7 @@ function movies(url) {
 
 function showmovies(data) {
   data.forEach((movie) => {
-    const main = document.getElementById("main");
+   
 
     const { title, poster_path, overview, id } = movie;
     const movie1 = document.createElement("div");
@@ -40,6 +44,7 @@ function showmovies(data) {
 
 function movieDetails(event) {
   console.log(event.target.id);
+  //hi
 
   console.log(event.target.dataset);
   const data = event.target.dataset;
@@ -55,3 +60,17 @@ function movieDetails(event) {
 // let hold = document.createTextNode(content);
 
 // hello
+// world
+// somethig
+//morning
+//morning1
+
+form.addEventListener('submit', (e) =>{
+  e.preventDefault();
+  const searchTerm = search.value;
+  if(searchTerm){
+    movies(SEARCH_URL + '&query='+ searchTerm);
+  }else{
+    movies(API_URL);
+  }
+})
