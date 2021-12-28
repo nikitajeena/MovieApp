@@ -64,6 +64,7 @@ function movieDetails(event) {
 // somethig
 //morning
 //morning1
+//second commit
 
 form.addEventListener('submit', (e) =>{
   e.preventDefault();
